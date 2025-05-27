@@ -1,57 +1,81 @@
-# Teste-de-Banco.DIO
-Identificador de Bandeira de Cartão de Crédito
-Um programa Python simples que identifica a bandeira de um cartão de crédito (Visa, MasterCard, etc.) com base no número do cartão, incluindo validação pelo algoritmo de Luhn.
 
-Funcionalidades
-Valida o número do cartão usando o algoritmo de Luhn
+# Identificador de Bandeira de Cartão de Crédito
 
-Identifica a bandeira do cartão com base nos prefixos conhecidos
+Este projeto é uma aplicação simples desenvolvida em Python, capaz de identificar a bandeira com base no número do cartão. Além disso, valida se o número informado é um cartão válido através do Algoritmo de Luhn.
 
-Suporta as principais bandeiras:
+## 🚀 Funcionalidades
 
-Visa
+- ✅ Validação do número do cartão usando o **Algoritmo de Luhn**.
+- ✅ Identificação da bandeira do cartão:
+  - Visa
+  - MasterCard
+  - American Express
+  - Discover
+  - JCB
+  - Diners Club
+  - Elo
+  - Hipercard
+  - Maestro
+  - Entre outros (ou retorna "Bandeira desconhecida").
 
-MasterCard
+## 🧠 Como funciona
 
-American Express
+O programa faz:
 
-Discover
+1. Limpeza do número (remove espaços e hífens).
+2. Validação através do **Algoritmo de Luhn**, que detecta se o número do cartão é matematicamente válido.
+3. Verificação dos padrões de prefixos dos cartões para determinar a bandeira correspondente.
 
-JCB
+## 🛠️ Tecnologias
 
-Diners Club
+- Linguagem: **Python 3**
 
-Elo
+## 💻 Como executar
 
-Hipercard
+1. Clone o repositório:
 
-Maestro
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
 
-Como usar
-Clone o repositório ou copie o código identificador_bandeira.py
+2. Acesse o diretório do projeto:
 
-Execute o script Python:
+```bash
+cd seu-repositorio
+```
 
-bash
-python identificador_bandeira.py
-Digite o número do cartão quando solicitado
+3. Execute o script:
 
-O programa exibirá a bandeira identificada ou mensagem de erro se o número for inválido
+```bash
+python teste_Banco.py
+```
 
-Requisitos
-Python 3.x
+4. Insira o número do cartão (com ou sem espaços/hífens).  
+O programa irá informar se o número é válido e a bandeira correspondente.
 
-Exemplo de uso
-bash
+## 🔧 Exemplo de uso
+
+```bash
 Digite o número do cartão de crédito: 4111 1111 1111 1111
 Bandeira identificada: Visa
-Validações realizadas
-Remove espaços e hífens do número do cartão
+```
 
-Verifica se contém apenas dígitos numéricos
+```bash
+Digite o número do cartão de crédito: 5105-1051-0510-5100
+Bandeira identificada: MasterCard
+```
 
-Verifica se o tamanho está entre 13 e 19 dígitos
+## ⚠️ Observações importantes
 
-Aplica o algoritmo de Luhn para validação
+- Este projeto é de caráter **educacional e experimental**.
+- Não armazena, processa ou transmite dados reais de cartões.
+- Não utilize números reais de cartões.
 
-Identifica a bandeira com base nos prefixos conhecidos
+## 📄 Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas!  
+Sinta-se livre para abrir issues, pull requests ou sugestões.
