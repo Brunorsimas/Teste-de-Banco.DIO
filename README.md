@@ -35,7 +35,7 @@ O programa faz:
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone [https://github.com/Brunorsimas/Teste-de-Banco.DIO.git]
 ```
 
 2. Acesse o diretório do projeto:
@@ -70,10 +70,6 @@ Bandeira identificada: MasterCard
 - Este projeto é de caráter **educacional e experimental**.
 - Não armazena, processa ou transmite dados reais de cartões.
 - Não utilize números reais de cartões.
-
-## 📄 Licença
-
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## 🤝 Contribuição
 
